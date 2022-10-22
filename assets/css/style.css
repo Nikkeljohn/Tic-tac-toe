@@ -50,3 +50,19 @@
 .player2{
     color: #498afb;
 }
+.controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+#reset{
+    background-color: red;
+    color: white;
+    padding: 9px;
+    border-radius: 9px;
+    font-size: 23px;
+    margin-left: 1em;
+    cursor: pointer;
+}
