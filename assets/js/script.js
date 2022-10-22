@@ -1,1 +1,4 @@
-console.log("sdfsdfs")
+window.addEventListener('DOMContentLoaded', () =>{
+
+    resetButton.addEventListener('click', resetBoard);
+});
