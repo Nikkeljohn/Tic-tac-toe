@@ -32,5 +32,15 @@
     display: grid;
     grid-template-columns: 34% 34% 34%;
     grid-template-rows: 34% 34% 34%;
-    
+
+}
+.tile{
+    border: 1px solid black;
+    min-width: 100px;
+    min-height: 100px;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 45px;
 }
