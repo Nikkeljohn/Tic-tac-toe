@@ -8,7 +8,7 @@
     padding-top: 1px;
     height: 100vh;
 }
-.tile{
+.title{
     color: black;
     font-size: 40px;
     text-align: center;
@@ -24,4 +24,13 @@
 /*hide ui elements*/
 .hide{
     display: none;
+}
+
+.container{
+    max-width: 100%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 34% 34% 34%;
+    grid-template-rows: 34% 34% 34%;
+    
 }
