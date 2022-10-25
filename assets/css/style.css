@@ -52,3 +52,33 @@
     align-items: center;
     margin-top: 1em;
 }
+.controls button{
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+    cursor: pointer;
+}
+.restart{
+    background-color: #498AFB;
+
+}
+#reset{
+    background-color: #ff0000;
+}
+.front{
+    text-align: center;
+    margin-top: 10em;
+}
+.start{
+    color: white;
+    background-color: #ff0000;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+    cursor: pointer;
+}
