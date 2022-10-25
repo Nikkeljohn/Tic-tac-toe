@@ -7,7 +7,8 @@
 
 .background{
     background-color:#f8f9fa;
-    padding: 1px;
+    padding-top: 1px;
+    height: 100px;
 }
 .title{
     color: rgb(0, 0, 0);
@@ -21,6 +22,9 @@
     text-align: center;
     margin-bottom: 1em;
     margin-top: 1em;
+}
+.hide{
+    display: none;
 }
 
 .container{
@@ -47,22 +51,23 @@
 .player2{
     color: #005eff;
 }
+/* control*/
 .controls{
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
     margin-top: 1em;
 }
+
 /*button for game */
 
-#reset{
+.reset{
     background-color: red;
     color: white;
-    padding: 55px;
-    border-radius: 50px;
-    font-size: 30px;
-    margin-left: 1em;
+    border-radius: 40px;
+    font-size: 20px;
+    margin-left: 1px;
     cursor: pointer;
 }
 /* media query /*
