@@ -30,7 +30,14 @@ let gameRunning= false;
  ];
 // adding the different function for game 
 
+initializeGame();
+
 function initializeGame(){
+    // used for each method and add event lisitner
+
+    tiles.forEach(tiles=>tiles.addEventListener("cilck","tilesClicked"));
+    resetButton.addEventListener("click","resetGame");
+    playerDisplay.textContent=`${currentPlayer}'s Turn`;
 
 }
 function tilesClicked(){
@@ -43,6 +50,6 @@ function changePlayer(){
 
 }
 function resetGame(){
-    
+
 }
 });
