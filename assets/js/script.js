@@ -33,7 +33,7 @@ let gameRunning= false;
 initializeGame();
 
 function initializeGame(){
-    // used for each method and add event lisitner
+    // used for each method and add event listner
 
     tiles.forEach(tiles=>tiles.addEventListener("cilck","tilesClicked"));
     resetButton.addEventListener("click","resetGame");
