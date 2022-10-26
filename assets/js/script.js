@@ -2,8 +2,11 @@
 
 window.addEventListener('DOMContentLoaded', () =>{
     const playerDisplay = document.querySelector('.display-player');
-    const tile = Array.from(document.querySelectorAll('.tile'));
+    const cell = Array.from(document.querySelectorAll('.tile'));
  const resetButton = document.querySelector('#reset');
+ const announcer=document.querySelector(".announcer");
+
+ //
 
     resetButton.addEventListener('click', resetBoard);
 });
