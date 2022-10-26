@@ -2,7 +2,7 @@
 
 window.addEventListener('DOMContentLoaded', () =>{
     const playerDisplay = document.querySelector('.display-player');
-    const cell = Array.from(document.querySelectorAll('.tile'));
+    const tiles = Array.from(document.querySelectorAll('.tile'));
  const resetButton = document.querySelector('#reset');
 let board =["","","","","","","","","",]
 
@@ -28,6 +28,21 @@ let gameRunning= false;
     [2,4,6]
 
  ];
+// adding the different function for game 
 
+function initializeGame(){
+
+}
+function tilesClicked(){
+
+}
+function updatetiles(tiles,index){
+
+}
+function changePlayer(){
+
+}
+function resetGame(){
     
+}
 });
