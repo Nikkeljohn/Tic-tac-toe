@@ -42,6 +42,15 @@ function initializeGame(){
 }
 function tilesClicked(){
 
+    // this reffers to what ever tile we click on
+
+    const tileIndex = this.getAttribute("tileIndex");
+
+    // now have check if our tileIndexnumber within our board are not empty
+    if(board[tileIndex] !="" || !gameRunning){
+        return;
+    }
+
 }
 function updatetiles(tiles,index){
 
