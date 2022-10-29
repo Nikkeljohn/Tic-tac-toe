@@ -7,7 +7,8 @@
  const announcer = document.querySelector('.announcer');
 let options =["","","","","","","","","",]
  let player1_Won = "player1_won";
- let player2_Won = "player2_Won"
+ let player2_Won = "player2_Won";
+ let Tie = "Tie";
 
 //track current player
 
@@ -34,6 +35,7 @@ let gameRunning= true;
     [2,4,6]
 
  ];
+
 // adding the  function for game 
 
 function handleValidation(){
@@ -42,6 +44,50 @@ function handleValidation(){
     const a = options[winConditions[0]];
     const b = options[winConditions[1]];
     const c = options[winConditions[2]];
-    if (a === "" || b === "" || "")
+    if (a === "" || b === "" || c === ""){
+        continue;
+    }
+    if (a ===b && b === c){
+
+    }
 
 }
+const userAction = (cell, index) =>{
+    if()
+
+
+}
+
+const updateCells = (index) => {
+    options[index] = currentPlayer;
+
+}
+const changePlayer = () => {
+    playerDisplay.classList.remove(`player${currentPlayer}`);
+    currentPlayer = currentPlayer === "1" ? "2" : "1";
+    playerDisplay.innerText = currentPlayer;
+    playerDisplay.classList.add(`player${currentPlayer}`)
+
+}
+// restart the board//
+
+const resetBoard = () =>{
+    options = ["","","","","","","","",""];
+    gameRunning = true;
+    announcer.classList.add("hide");
+    if (currentPlayer === "2")
+    changePlayer();
+}
+
+tiles.forEach( cell => {
+    cell.innerText ="";
+    cell.classList.remove("player1");
+    cell.classList.remove("player2");
+});
+}
+// event lister for every tile by for each method//
+
+    /*tiles.forEach(cell, index) => {
+    cell.addEventListener("click", () => userAction(cell, index));
+
+resetButton.addEventListener("click", resetBoard);
