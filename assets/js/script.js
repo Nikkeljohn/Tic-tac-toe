@@ -1,21 +1,25 @@
 // added an event listener to get game button element and content
 
-//(window.addEventListener('DOMContentLoaded', () =>{
-    const statusText= document.querySelector('#statusText');
-    const tiles = document.querySelectorAll(".tile");
+(window.addEventListener('DOMContentLoaded', () =>{
+    const playerDisplay = document.querySelector('.display-player');
+    const tiles = Array.from(document.querySelectorAll('.cell'));
  const resetButton = document.querySelector('#reset');
-let board =["","","","","","","","","",]
+ const announcer = document.querySelector('.announcer');
+let options =["","","","","","","","","",]
+ let player1_Won = "player1_won";
+ let player2_Won = "player2_Won"
 
 //track current player
 
-let currentPlayer = "X";
+let currentPlayer = "1";
 
 //boolean is used to track if game is running
 
-let gameRunning= false;
+let gameRunning= true;
 
  //giving winning condition
   //here we declare 9 cells or tiles 0 to 9 for winning condition
+/* index with in board [0,1,2],[3,4,5],[6,7,8]*/
 
  const winConditions =[
    
@@ -30,55 +34,14 @@ let gameRunning= false;
     [2,4,6]
 
  ];
-// adding the different function for game 
+// adding the  function for game 
 
-initializeGame();
-
-function initializeGame(){
-    // used for each method and add event listner
-
-    tiles.forEach(tile=>tile.addEventListener("cilck",tileClicked));
-    resetButton.addEventListener("click",resetGame);
-    statusText.textContent=`${currentPlayer}'s Turn`;
-    gameRunning = true;
-
-}
-//when we click into our what will it do
-
-function tileClicked(){
-
-    // this reffers to what ever tile we click on
-
-    const tileIndex = this.getAttribute("tileIndex");
-
-    // now have check if our tileIndexnumber within our board are not empty
-    if(board[tileIndex] != "" || !gameRunning){
-        return;
-    }
-
-    updateTile(this, tileIndex);
-    checkWinner();
-
-
-}
-
-function updatetiles(tile,index){
-    board[index] = currentPlayer;
-    tile.textContent = currentPlayer;
-
-
-}
-function changePlayer(){ 
-    currentPlayer = (currentPlayer == "X") ? "O":"X";
-    statusText.textContent = `${currentPlayer}'s Trun`
-}
-
-
-function checkWinner(){
-    let roundWon= false;
-   
-}
-
-function resetGame(){
+function handleValidation(){
+    let roundWon = false;
+    const winConditions = winConditions[i];
+    const a = options[winConditions[0]];
+    const b = options[winConditions[1]];
+    const c = options[winConditions[2]];
+    if (a === "" || b === "" || "")
 
 }
