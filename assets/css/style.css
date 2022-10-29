@@ -11,7 +11,7 @@
 }
 .title{
     color: black;
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
     margin-top: 10%;
 }
@@ -35,7 +35,7 @@
     grid-template-rows: 33% 33% 33%;
 
 }
-.tile{
+.cell{
     border: 1px solid black;
     min-width: 100px;
     min-height: 100px;

@@ -71,11 +71,11 @@ function updatetiles(tile,index){
 function changePlayer(){ 
     currentPlayer = (currentPlayer == "X") ? "O":"X";
     statusText.textContent = `${currentPlayer}'s Trun`
-
-
-
 }
+
+
 function checkWinner(){
+    let roundWon= false;
    
 }
 
